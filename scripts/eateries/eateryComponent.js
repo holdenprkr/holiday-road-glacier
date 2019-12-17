@@ -17,12 +17,16 @@ eventHub.addEventListener("change", event => {
     }
   }
 
+
 })
+
+
+
+
   const render = eateryCollection => {
     contentTarget.innerHTML += `
         <select class="eatDropdown" id="eatSelect">
         <option value="" disabled selected>Select an Eatery</option>
-            <option>Wheelchair Accessible</option>
           ${eateryCollection.map(
               eat => `<option class="eatery__option">${eat.businessName}</option>`
           )}
