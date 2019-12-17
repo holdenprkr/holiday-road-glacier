@@ -1,3 +1,4 @@
+import settings from "../"
 let parks = []
 
 export const useParks = () => {
