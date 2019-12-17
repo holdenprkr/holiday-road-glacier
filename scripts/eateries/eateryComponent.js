@@ -40,6 +40,8 @@ const renderEatery = restaurant => {
   `
     <div> <strong>Name</strong>:${restaurant.businessName}</div><br>
     <div>${restaurant.description}</div>
+    <div>${restaurant.city}</div>
+    <div>${restaurant.state}</div>
 
   `
 }
