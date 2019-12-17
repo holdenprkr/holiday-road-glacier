@@ -9,7 +9,7 @@ export const getParks = () => {
       .then(response => response.json())
       .then(
           parsedParks => {
-              console.table(parsedParks)
+            
               Parks = parsedParks
           }
       )

@@ -9,8 +9,8 @@ export const getBizzaro = () => {
       .then(response => response.json())
       .then(
           parsedBizzaro => {
-              console.table(parsedBizzaro)
-              Bizzaro = parsedBizzaro
+            
+              // Bizzaro = parsedBizzaro
           }
       )
 }
