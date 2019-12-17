@@ -18,3 +18,17 @@ getParks().then(
 )
 getEats()
 getBizzaro()
+import { eateryListComponent } from "./eateries/eateryComponent.js";
+
+
+getParks()
+
+
+getEats().then(
+  () => {
+    eateryListComponent()
+  }
+)
+
+
+getBizzaro()
