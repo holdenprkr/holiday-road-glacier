@@ -9,7 +9,7 @@ export const getBizzaro = () => {
       .then(response => response.json())
       .then(
           parsedBizzaro => {
-              Bizzaro = parsedBizzaro
+              Bizarro = parsedBizzaro
           }
       )
 }
