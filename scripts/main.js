@@ -13,13 +13,18 @@ getStates().then(
 
 getParks().then(
     () => {
-        parkSelect()
+        parkSelect().then(
+          () => {
+            parksList()
+          }
+        )
     }
 )
 getEats()
 getBizzaro()
 import { eateryListComponent } from "./eateries/eateryComponent.js";
 import { attractionComponent } from "./attractions/AttractionComponent.js";
+import { parksList } from "./parks/parksList.js";
 
 
 getParks()

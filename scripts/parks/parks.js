@@ -11,4 +11,4 @@ const ParksComponent = (park) => {
   `
 }
 
-export default CriminalComponent
+export default ParksComponent

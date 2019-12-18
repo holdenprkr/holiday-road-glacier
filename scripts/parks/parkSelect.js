@@ -16,7 +16,7 @@ const parkSelect = () => {
 
             const message = new CustomEvent("parkSelected", {
                 detail: {
-                    crime: selectedPark
+                    park: selectedPark
                 }
             })
 
@@ -33,7 +33,7 @@ const parkSelect = () => {
                 <option value="0">Please select a park...</option>
                 ${
                     parksCollection.map(currentPark => {
-                        return `<option>${currentPark.fullName}</option>`
+                        return `<option value="${currentPark.parkCode}">${currentPark.fullName}</option>`
                     }).sort()
                 }
             </select>
