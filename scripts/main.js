@@ -4,6 +4,7 @@ import { getBizzaro } from "./attractions/AttractionProvider.js";
 import WeatherListComponent from "./weather/WeatherList.js";
 import { getWeather } from "./weather/WeatherProvider.js";
 import { eateryListComponent } from "./eateries/eateryComponent.js";
+import { attractionComponent } from "./attractions/AttractionComponent.js";
 
 getParks()
 
@@ -19,4 +20,8 @@ getEats().then(
   }
 )
 
-getBizzaro()
+getBizzaro().then(
+  () => {
+    attractionComponent()
+  }
+)
