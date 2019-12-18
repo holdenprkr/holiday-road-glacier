@@ -22,12 +22,14 @@ eventHub.addEventListener("change", event => {
 //renders the eatery collection dropdown
   const render = eateryCollection => {
     contentTarget.innerHTML = `
+      <section class="eatDropdown__card">
         <select class="eatDropdown" id="eatSelect">
         <option value="" disabled selected>Select an Eatery</option>
           ${eateryCollection.map(
               eat => `<option class="eatery__option">${eat.businessName}</option>`
           )}
         </select>
+        </section>
     `
 }
 
@@ -57,11 +59,12 @@ eventHub.addEventListener("click", checkEvent => {
 const renderEatery = restaurant => {
   contentElement.innerHTML =
   `
+  <section class="res__card">
     <div> <strong>Name</strong>:${restaurant.businessName}</div><br>
     <div>${restaurant.description}</div>
     <div>${restaurant.city}</div>
     <div>${restaurant.state}</div>
-
+</section>
   `
 }
 }
