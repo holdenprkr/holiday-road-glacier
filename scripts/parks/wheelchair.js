@@ -3,23 +3,15 @@ import { useCampground } from "./campgroundProvider.js"
 const wheelchairSelect = () => {
   const wheelchairs = useCampground()
 
-  eventHub.addEventListener("change", changeEvent => {
+  addEventListener("change", changeEvent => {
       if (changeEvent.target.classList.contains("dropdown")) {
           const selectedwheelchair = changeEvent.target.value
 
-          const message = new CustomEvent("wheelchairSelected", {
-              detail: {
-                  wheelchair: selectedwheelchair
-              }
-          })
+          
 
-          eventHub.dispatchEvent(message)
-      }
-  })
-
-  eventHub.addEventListener("wheelchairSelected", event => {
-    if ("wheelchairSelected" in event.detail) {
-      let wheelchair = event.detail.wheelchair
+  addEventListener("selectedwheelchair", event => {
+    if ("selectedwheelchair" in changeEvent) {
+      let wheelchair = event.detail.data.accessibility.wheelchairaccess
       const matchingParks = wheelchairCollection.filter(currentWheelchair => {
         if (currentWheelchair.wheelchair === wheelchair) {
           return currentWheelchair;
