@@ -1,8 +1,8 @@
 import settings from "../Settings.js"
-let Parks = []
+let parks = []
 
 export const useParks = () => {
-  return Parks.slice()
+  return parks.slice()
 }
 
 export const getParks = () => {
@@ -10,8 +10,7 @@ export const getParks = () => {
       .then(response => response.json())
       .then(
           parsedParks => {
-              console.table(parsedParks)
-              Parks = parsedParks.data
+              parks = parsedParks.data
           }
       )
 }
