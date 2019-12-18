@@ -8,18 +8,21 @@ import parkSelect from "./parks/parkSelect.js";
 import stateSelect from "../states/stateSelect.js";
 import { eateryListComponent } from "./eateries/eateryComponent.js";
 import { attractionComponent } from "./attractions/AttractionComponent.js";
+import { parksList } from "./parks/parksList.js";
 
 getStates().then(
     () => {
         stateSelect()
     }
 )
+// getParks().then(
+//   () => {
+//     parkSelect()
+//   }
+// )
+parkSelect()
+parksList()
 
-getParks().then(
-    () => {
-        parkSelect()
-    }
-)
 
 // getWeather().then(
 //   () => {
@@ -32,6 +35,8 @@ getEats().then(
     eateryListComponent()
   }
 )
+
+
 
 getBizzaro().then(
   () => {
