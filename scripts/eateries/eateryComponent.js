@@ -5,8 +5,8 @@ const contentTarget = document.querySelector(".eaterySelect")
 const contentElement = document.querySelector(".eateryInfo")
 
 export const eateryListComponent = () => {
+ //adds a event listener to the dropdown and loops over the whole eatery array and then renders the selected choice 
 const eateryCollection = useEats();
-
 eventHub.addEventListener("change", event => {
   if (event.target.id === "eatSelect") {
     for (let restaurant of eateryCollection) {
@@ -15,13 +15,11 @@ eventHub.addEventListener("change", event => {
       }  
     }
   }
-
-
 })
 
 
 
-
+//renders the eatery collection dropdown
   const render = eateryCollection => {
     contentTarget.innerHTML = `
         <select class="eatDropdown" id="eatSelect">
@@ -32,25 +30,30 @@ eventHub.addEventListener("change", event => {
         </select>
     `
 }
-render(eateryCollection)
 
-// let filteredCollection = eateryCollection.filter(
-//   (currentEatery) => {
-//     if (currentEatery.ameneties.wheelchairAccessible) {
-//       return currentEatery
-//     }
-//   }
-// )
+//filters the eateryCollection by wheelchair acessibility
+let filteredCollection = eateryCollection.filter(
+  (currentEatery) => {
+    if (currentEatery.ameneties.wheelchairAccessible) {
+      return currentEatery
+    }
+  }
+  )
+  
+  render(filteredCollection)
+//the event listener for the checkbox click event
+let checkbutton = document.getElementById("eateryFilter")
+eventHub.addEventListener("click", checkEvent => {
+  if (event.target.id === "eateryFilter") {
+  if (checkbutton.checked) {
+      render(filteredCollection)
+  } else {
+      render(eateryCollection)
+  }}
+})
 
-// let checkbutton = document.getElementById("eateryFilter")
-// eventHub.addEventListener("click", checkEvent => {
-//   if (checkbutton.checked) {
-//       render(filteredCollection)
-//   } else {
-//       render(eateryCollection)
-//   }
-// })
 
+//renders the restauarnt info HTML
 const renderEatery = restaurant => {
   contentElement.innerHTML =
   `
