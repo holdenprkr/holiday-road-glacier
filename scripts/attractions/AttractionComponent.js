@@ -19,7 +19,6 @@ export const attractionComponent = () => {
   })
 
   const renderSelect = attractions => {
-    console.log(attractionCollection)
     contentTarget.innerHTML = `
     <select class="attractionDropdown" id="bizSelect">
         <option value="" disabled selected>Select an attraction</option>

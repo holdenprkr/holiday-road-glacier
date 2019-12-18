@@ -21,11 +21,11 @@ getParks().then(
     }
 )
 
-getWeather().then(
-  () => {
-    WeatherListComponent()
-  }
-)
+// getWeather().then(
+//   () => {
+//     WeatherListComponent()
+//   }
+// )
 
 getEats().then(
   () => {
