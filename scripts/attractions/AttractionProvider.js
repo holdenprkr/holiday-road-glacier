@@ -1,7 +1,7 @@
-let Bizarro = []
+let Bizzarro = []
 
 export const useBizzaro = () => {
-  return Bizarro.slice()
+  return Bizzarro.slice()
 }
 
 export const getBizzaro = () => {
@@ -9,8 +9,7 @@ export const getBizzaro = () => {
       .then(response => response.json())
       .then(
           parsedBizzaro => {
-            
-              // Bizzaro = parsedBizzaro
+            Bizzarro = parsedBizzaro
           }
       )
 }
