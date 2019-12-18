@@ -10,7 +10,7 @@ const parkSelect = () => {
     // What should this component say to the event hub, and when
   
     eventHub.addEventListener("change", changeEvent => {
-        if (changeEvent.target.id === "parkSelect") {
+        if (changeEvent.target.id === "selectPark") {
             // Make a custom event to "talk" to other components
             const selectedPark = changeEvent.target.value
 
