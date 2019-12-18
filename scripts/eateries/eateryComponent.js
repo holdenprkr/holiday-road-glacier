@@ -12,8 +12,7 @@ eventHub.addEventListener("change", event => {
     for (let restaurant of eateryCollection) {
       if (event.target.value === restaurant.businessName) {
         renderEatery(restaurant)
-      }
-      
+      }  
     }
   }
 
@@ -24,7 +23,7 @@ eventHub.addEventListener("change", event => {
 
 
   const render = eateryCollection => {
-    contentTarget.innerHTML += `
+    contentTarget.innerHTML = `
         <select class="eatDropdown" id="eatSelect">
         <option value="" disabled selected>Select an Eatery</option>
           ${eateryCollection.map(
@@ -34,6 +33,23 @@ eventHub.addEventListener("change", event => {
     `
 }
 render(eateryCollection)
+
+// let filteredCollection = eateryCollection.filter(
+//   (currentEatery) => {
+//     if (currentEatery.ameneties.wheelchairAccessible) {
+//       return currentEatery
+//     }
+//   }
+// )
+
+// let checkbutton = document.getElementById("eateryFilter")
+// eventHub.addEventListener("click", checkEvent => {
+//   if (checkbutton.checked) {
+//       render(filteredCollection)
+//   } else {
+//       render(eateryCollection)
+//   }
+// })
 
 const renderEatery = restaurant => {
   contentElement.innerHTML =
