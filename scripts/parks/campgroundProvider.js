@@ -1,3 +1,4 @@
+import settings from "../Settings.js"
 let campground = []
 
 export const useCampground = () => {
@@ -5,7 +6,7 @@ export const useCampground = () => {
 }
 
 export const getCampground = () => {
-  return fetch("https://developer.nps.gov/api/v1/campgrounds?&api_key=Odl6I4v2LzwHnoSE37VROz5mJ0ALvGfHlWVv9zOx")
+  return fetch(`https://developer.nps.gov/api/v1/campgrounds?&api_key=${settings.apiKey}`)
       .then(response => response.json())
       .then(
           parsedCampground => {

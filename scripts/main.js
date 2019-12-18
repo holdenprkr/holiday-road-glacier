@@ -19,6 +19,7 @@ getParks().then(
 getEats()
 getBizzaro()
 import { eateryListComponent } from "./eateries/eateryComponent.js";
+import { attractionComponent } from "./attractions/AttractionComponent.js";
 
 
 getParks()
@@ -32,3 +33,8 @@ getEats().then(
 
 
 getBizzaro()
+getBizzaro().then(
+  () => {
+    attractionComponent()
+  }
+)
