@@ -1,3 +1,5 @@
+import settings from "../Settings.js"
+
 let weather = []
 
 export const useWeather = () => {

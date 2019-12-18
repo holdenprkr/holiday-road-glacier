@@ -5,8 +5,13 @@ import WeatherListComponent from "./weather/WeatherList.js";
 import { getWeather } from "./weather/WeatherProvider.js";
 import { eateryListComponent } from "./eateries/eateryComponent.js";
 import { attractionComponent } from "./attractions/AttractionComponent.js";
+import DropDownParks from "./parks/ParkDropDown.js";
 
-getParks()
+getParks().then(
+  () => {
+    DropDownParks()
+  }
+)
 
 getWeather().then(
   () => {
