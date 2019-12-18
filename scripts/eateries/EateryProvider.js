@@ -9,7 +9,6 @@ export const getEats = () => {
       .then(response => response.json())
       .then(
           parsedEats => {
-              console.table(parsedEats)
               Eats = parsedEats
           }
       )

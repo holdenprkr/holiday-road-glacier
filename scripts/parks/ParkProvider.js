@@ -5,12 +5,11 @@ export const useParks = () => {
 }
 
 export const getParks = () => {
-  return fetch("https://developer.nps.gov/api/v1/parks?api_key=Odl6I4v2LzwHnoSE37VROz5mJ0ALvGfHlWVv9zOx")
+  return fetch("https://developer.nps.gov/api/v1/parks?&fields=images,addresses&api_key=XQVgdeIcli9gAyrTqgY6T0Kb7bEk4qcLxm9jDkPA")
       .then(response => response.json())
       .then(
           parsedParks => {
-              console.table(parsedParks)
-              Parks = parsedParks
+              Parks = parsedParks.data
           }
       )
 }
