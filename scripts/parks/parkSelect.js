@@ -5,25 +5,8 @@ const contentTarget = document.querySelector("#parkSelect")
 
 
 const parkSelect = () => {
-    const parks = useParks()
-
-    // What should this component say to the event hub, and when
-  
-    eventHub.addEventListener("change", changeEvent => {
-        if (changeEvent.target.id === "parkSelect") {
-            // Make a custom event to "talk" to other components
-            const selectedPark = changeEvent.target.value
-
-            const message = new CustomEvent("parkSelected", {
-                detail: {
-                    crime: selectedPark
-                }
-            })
-
-            // Dispatch it
-            eventHub.dispatchEvent(message)
-        }
-    })
+    const parks = useParks()  
+    
 
 
 
@@ -47,3 +30,21 @@ const parkSelect = () => {
 }
 
 export default parkSelect
+
+/*
+eventHub.addEventListener("change", changeEvent => {
+    if (changeEvent.target.id === "parkSelect") {
+        // Make a custom event to "talk" to other components
+        const selectedPark = changeEvent.target.value
+
+        const message = new CustomEvent("parkSelected", {
+            detail: {
+                crime: selectedPark
+            }
+        })
+
+        // Dispatch it
+        eventHub.dispatchEvent(message)
+    }
+})
+*/
