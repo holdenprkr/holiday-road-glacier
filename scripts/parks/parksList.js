@@ -7,15 +7,13 @@ const contentElement = document.querySelector(".parkSection");
 export const parksList = () => {
   const parksCollection = useParks()
 
-  eventHub.addEventListener("change", changeEvent => {
-    if (changeEvent.target.id === "selectPark") {
+  eventHub.addEventListener("parkSelected", customEvent => {
 
     for (let singlePark of parksCollection) {
-      console.log(changeEvent.target.value)
-      if (changeEvent.target.value === singlePark.parkCode) {
+      if (customEvent.detail.park === singlePark.parkCode) {
         render(singlePark)
     } 
-  }}})
+  }})
     
     let render = park => {
       contentElement.innerHTML = `
