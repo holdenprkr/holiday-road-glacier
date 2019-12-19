@@ -2,3 +2,24 @@
 @import 'weather.css';
 @import 'eatery.css';
 @import 'bizarre.css';
+@import 'parks.css';
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1502943693086-33b5b1cfdf2f?ixlib=rb-1.2.1&w=1000&q=80")
+}
+
+header {
+    display: flex;
+    flex-direction: row;    
+}
+
+h1 {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.itinerary {
+    background-color: slategrey;
+    opacity: .7;
+}
