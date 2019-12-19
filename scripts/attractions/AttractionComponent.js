@@ -16,8 +16,25 @@ export const attractionComponent = () => {
         
       }
     }
-  
-  
+  })
+
+  eventHub.addEventListener("parkSelected", event => {
+    let bizzLocationFilter = attractionCollection.filter(
+      (current) => {
+        if (current.state === event.detail.state) {
+          return current;
+        }
+      }
+    )
+    eventHub.addEventListener("click", clickEvent => {
+      if (clickEvent.target.classList.contains("bizzFilter")) {
+        if (clickEvent.target.checked) {
+          renderSelect(bizzLocationFilter)
+        } else {
+          renderSelect(attractionCollection)
+        }
+      }
+    })
   })
 
 
