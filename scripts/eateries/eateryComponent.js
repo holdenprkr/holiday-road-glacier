@@ -1,13 +1,16 @@
 import { useEats } from "./EateryProvider.js"
+import { useParks } from "../parks/ParkProvider.js"
 
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".eaterySelect")
 const contentElement = document.querySelector(".eateryInfo")
 
 export const eateryListComponent = () => {
- //adds a event listener to the dropdown and loops over the whole eatery array and then renders the selected choice 
-const eateryCollection = useEats();
-eventHub.addEventListener("change", event => {
+  //adds a event listener to the dropdown and loops over the whole eatery array and then renders the selected choice 
+  const eateryCollection = useEats();
+  const parkCollection = useParks();
+  let locationCheckButton = document.querySelector(".locationFilter")
+  eventHub.addEventListener("change", event => {
   if (event.target.id === "eatSelect") {
     for (let restaurant of eateryCollection) {
       if (event.target.value === restaurant.businessName) {
@@ -22,12 +25,14 @@ eventHub.addEventListener("change", event => {
 //renders the eatery collection dropdown
   const render = eateryCollection => {
     contentTarget.innerHTML = `
+      <section class="eatDropdown__card">
         <select class="eatDropdown" id="eatSelect">
         <option value="" disabled selected>Select an Eatery</option>
           ${eateryCollection.map(
               eat => `<option class="eatery__option">${eat.businessName}</option>`
           )}
         </select>
+        </section>
     `
 }
 
@@ -39,8 +44,28 @@ let filteredCollection = eateryCollection.filter(
     }
   }
   )
-  
-  render(filteredCollection)
+
+eventHub.addEventListener("parkSelected", event => {
+  let locationFilteredCollection = eateryCollection.filter(
+    (currentEatery) => {
+      if (currentEatery.state === event.detail.state) {
+        console.log("selected state", event.detail.state)
+        return currentEatery 
+      }
+    }
+  )
+  eventHub.addEventListener("click", locateEvent => {
+    if (locateEvent.target.classList.contains("locationFilter")) {
+      if (locateEvent.target.checked) {
+        render(locationFilteredCollection)
+      } else {
+        render(eateryCollection)
+      }
+    }
+  })
+})
+render(filteredCollection)
+
 //the event listener for the checkbox click event
 let checkbutton = document.getElementById("eateryFilter")
 eventHub.addEventListener("click", checkEvent => {
@@ -57,11 +82,12 @@ eventHub.addEventListener("click", checkEvent => {
 const renderEatery = restaurant => {
   contentElement.innerHTML =
   `
+  <section class="res__card">
     <div> <strong>Name</strong>:${restaurant.businessName}</div><br>
     <div>${restaurant.description}</div>
     <div>${restaurant.city}</div>
     <div>${restaurant.state}</div>
-
+</section>
   `
 }
 }
