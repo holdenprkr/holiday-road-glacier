@@ -24,11 +24,9 @@ parkSelect()
 parksList()
 
 
-// getWeather().then(
-//   () => {
-//     WeatherListComponent()
-//   }
-// )
+
+WeatherListComponent()
+
 
 getEats().then(
   () => {

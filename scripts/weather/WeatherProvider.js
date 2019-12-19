@@ -9,11 +9,12 @@ export const useWeather = () => {
 
 
 export const getWeather = (park) => {
-  return fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${park.addresses[0].city},${park.adresses[0].postalCode}&APPID=${settings.weatherKey}`)
-      .then(response => response.json())
-      .then(
-          parsedWeather => {
-              weather = parsedWeather.list
-          }
-      )
+  console.log(park.addresses[0])
+  return fetch(`http://api.openweathermap.org/data/2.5/forecast?zip=${park.addresses[0].postalCode},us&APPID=${settings.weatherKey}`)
+    .then(response => response.json())
+    .then(
+      parsedWeather => {
+        weather = parsedWeather.list
+      }
+    )
 }
