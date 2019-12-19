@@ -4,25 +4,24 @@ import { getEats } from "./eateries/EateryProvider.js";
 import { getBizzaro } from "./attractions/AttractionProvider.js";
 import parkSelect from "./parks/parkSelect.js";
 import stateSelect from "../states/stateSelect.js";
+import { eateryListComponent } from "./eateries/eateryComponent.js";
+import { attractionComponent } from "./attractions/AttractionComponent.js";
+import { parksList } from "./parks/parksList.js";
 
 getStates().then(
     () => {
         stateSelect()
     }
 )
-
-getParks().then(
-    () => {
-        parkSelect()
-    }
-)
-getEats()
-getBizzaro()
-import { eateryListComponent } from "./eateries/eateryComponent.js";
-import { attractionComponent } from "./attractions/AttractionComponent.js";
+// getParks().then(
+//   () => {
+//     parkSelect()
+//   }
+// )
+parkSelect()
+parksList()
 
 
-getParks()
 
 
 getEats().then(
@@ -32,7 +31,7 @@ getEats().then(
 )
 
 
-getBizzaro()
+
 getBizzaro().then(
   () => {
     attractionComponent()

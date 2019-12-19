@@ -10,13 +10,13 @@ const parkSelect = () => {
 
 
     eventHub.addEventListener("change", changeEvent => {
-        if (changeEvent.target.id === "parkSelect") {
+        if (changeEvent.target.id === "selectPark") {
             // Make a custom event to "talk" to other components
             const selectedPark = changeEvent.target.value
 
             const message = new CustomEvent("parkSelected", {
                 detail: {
-                    crime: selectedPark
+                    park: selectedPark
                 }
             })
 
@@ -47,4 +47,3 @@ const parkSelect = () => {
 }
 
 export default parkSelect
-
