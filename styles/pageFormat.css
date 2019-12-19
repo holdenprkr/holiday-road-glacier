@@ -17,8 +17,9 @@
   height: 500px;
   min-width: 1050px;
 }
-.parkSection{
+.parks{
   width: 100%;
+  min-height: 500px;
 }
 
 .bizzareSection{

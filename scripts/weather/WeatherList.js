@@ -22,6 +22,7 @@ const WeatherListComponent = () => {
 
   const render = (weatherData) => {
     // if (weatherData.dt_txt.contains("12:00:00"))
+    contentTarget.innerHTML = ""
     for (let days of weatherData) {
       if (days.dt_txt.includes("12:00:00")) {
         contentTarget.innerHTML += WeatherComponent(days)
