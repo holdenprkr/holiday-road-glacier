@@ -37,3 +37,4 @@ getBizzaro().then(
     attractionComponent()
   }
 )
+
