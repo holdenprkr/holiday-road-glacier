@@ -1,4 +1,4 @@
-const ParksComponent = (park) => {
+const ParksComponent = park => {
   return `
       <div class="park">
             <header class="park__header">Name: ${park.fullName}</header>
@@ -7,8 +7,14 @@ const ParksComponent = (park) => {
               <div>Directions: ${park.directionsUrl}</div>
               <div>Description: ${park.description}</div>
               <button id="pictures--${park.id}">Pictures</button>
-      </div>
-  `
-}
+              <dialog class="pictures">
+              <div id="picture__content"></div>
+              <button class="close--Pics">close</button>
 
-export default ParksComponent
+              </dialog>
+      
+      </div>
+  `;
+};
+
+export default ParksComponent;
