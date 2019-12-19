@@ -6,17 +6,10 @@ const contentTarget = document.querySelector("#parkSelect")
 
 
 const parkSelect = () => {
-<<<<<<< HEAD
-    const parks = useParks()  
-
-
-
-=======
     const parks = useParks()
     const eateryCollection = useEats()
     // What should this component say to the event hub, and when
   
->>>>>>> master
     eventHub.addEventListener("change", changeEvent => {
         if (changeEvent.target.id === "selectPark") {
             // Make a custom event to "talk" to other components
