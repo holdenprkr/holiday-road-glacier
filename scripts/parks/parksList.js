@@ -48,6 +48,6 @@ export const parksList = () => {
     let render = park => {
       contentElement.innerHTML = `
       ${ParksComponent(park)}`
-
+      
     }
-  })}
+  }

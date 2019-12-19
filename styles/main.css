@@ -1,14 +1,4 @@
 @import 'pageFormat.css';
+@import 'weather.css';
 @import 'eatery.css';
 @import 'bizarre.css';
-
-
-#picture__content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.image {
-  max-height: 200px;
-}
