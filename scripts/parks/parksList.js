@@ -50,4 +50,4 @@ export const parksList = () => {
       ${ParksComponent(park)}`
       
     }
-  }
+  })}
