@@ -33,7 +33,7 @@ const parkSelect = () => {
                 <option value="0">Please select a park...</option>
                 ${
                     parksCollection.map(currentPark => {
-                        return `<option>${currentPark.states} - ${currentPark.fullName}</option>`
+                        return `<option value="${currentPark.parkCode}--${currentPark.states}">${currentPark.states} - ${currentPark.fullName}</option>`
                     }).sort()
                 }
             </select>
