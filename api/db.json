@@ -1,3 +1,25 @@
 {
-	"itineraries": []
+  "itineraries": [
+    {
+      "park": "Cape Cod National Seashore",
+      "id": 1
+    },
+    {
+      "park": "National Aviation Heritage Area",
+      "bizzare": "Elvis Memorial Chapel",
+      "id": 2
+    },
+    {
+      "park": "Belmont-Paul Women's Equality National Monument",
+      "bizzare": "Big White Shirt",
+      "eatery": "Club Paris",
+      "id": 3
+    },
+    {
+      "park": "Belmont-Paul Women's Equality National Monument",
+      "bizzare": "Big White Shirt",
+      "eatery": "Club Paris",
+      "id": 4
+    }
+  ]
 }

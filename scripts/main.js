@@ -9,6 +9,7 @@ import stateSelect from "../states/stateSelect.js";
 import { eateryListComponent } from "./eateries/eateryComponent.js";
 import { attractionComponent } from "./attractions/AttractionComponent.js";
 import { parksList } from "./parks/parksList.js";
+import { saveButton } from "./parks/Save/saveButton.js";
 
 getStates().then(
     () => {
@@ -38,3 +39,4 @@ getBizzaro().then(
   }
 )
 
+saveButton()
