@@ -1,3 +1,16 @@
-.switch{
-  display: flex;
+.eatDropdown{
+ border-radius: 5px;
+box-shadow: .5px .5px .5px 0px goldenrod, inset 4px 4px 15px 0px gainsboro, 5px 5px 15px 5px rgba(0,0,0,0); 
+}
+
+.eatDropdown__card{
+padding: 2px;
+}
+
+.eatDropdown:hover{
+  border-color: goldenrod;
+}
+
+.res__card{
+  padding: 10px;
 }
