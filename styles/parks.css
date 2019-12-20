@@ -1,6 +1,7 @@
 .parks {
     color: black;
     text-align: center;
+    font-weight: bold;
     }
 
 .park__header {
@@ -17,4 +18,9 @@
 
 .dropdown {
     margin-top: 50px;
+}
+
+.parkSection {
+    background: rgba(255,255,255,.3);
+    margin-top: 10px;
 }
