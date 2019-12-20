@@ -23,8 +23,9 @@ header {
 h1 {
     color: goldenrod;
     font-weight: bold;
-    font-size: 85px;
+    font-size: 70px;
 }
+
 
 .itinerary {
     color: #FFFFFF;
@@ -45,5 +46,4 @@ h1 {
     color: #FFFFFF !important;
     text-shadow: 3px 5px 2px #474747;
 }
-
 
