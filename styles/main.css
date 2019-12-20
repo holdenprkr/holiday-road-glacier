@@ -65,3 +65,7 @@ h1 {
   max-width: 150px;
   background-color: transparent;
 }
+
+#logo {
+    border-radius: 50%;
+}
