@@ -6,7 +6,8 @@
 
 body {
     background-image: url("https://images.unsplash.com/photo-1466442862661-7d6f521fe6e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
-    background-size: ;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
