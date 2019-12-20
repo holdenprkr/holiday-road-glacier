@@ -13,34 +13,10 @@
       "id": 4
     },
     {
-      "park": "Belmont-Paul Women's Equality National Monument",
-      "bizzare": "World’s Most Scenic Urinal",
-      "eatery": "Hudson's Hamburgers",
+      "park": "Friendship Hill National Historic Site",
+      "bizzare": "Funny Town Welcome Sign",
+      "eatery": "El Pinto",
       "id": 5
-    },
-    {
-      "park": "Dry Tortugas National Park",
-      "bizzare": "Snake World",
-      "eatery": "Arthur Bryant's",
-      "id": 6
-    },
-    {
-      "park": "Fort Bowie National Historic Site",
-      "bizzare": "World’s Largest ‘Gone With the Wind’ Collection",
-      "eatery": "Commander's Palace",
-      "id": 7
-    },
-    {
-      "park": "Belmont-Paul Women's Equality National Monument",
-      "bizzare": "World’s Largest ‘Gone With the Wind’ Collection",
-      "eatery": "Union Oyster House",
-      "id": 8
-    },
-    {
-      "park": "Charles Pinckney National Historic Site",
-      "bizzare": "World’s Largest ‘Gone With the Wind’ Collection",
-      "eatery": "Mayflower Cafe",
-      "id": 9
     }
   ]
 }

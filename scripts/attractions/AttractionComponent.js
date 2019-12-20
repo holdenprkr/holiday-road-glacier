@@ -52,14 +52,41 @@ export const attractionComponent = () => {
   renderSelect(attractionCollection)
 
   const renderAttractions = bizz => {
+    const boolConvert = (bool) => {
+      if (bool === true) {
+        return "Yes"
+      } else {
+        return "No"
+      }
+    }
     contentElement.innerHTML =`
     <section class="bizz__card">
       <div> <strong>Name</strong>:${bizz.name}</div><br>
       <div>${bizz.description}</div>
       <div>City:${bizz.city}</div>
       <div>State:${bizz.state}</div>
+      <button class="button" id="bizzButton--${bizz.id}">Amenities</button>
+      <dialog id="details--">
+      <div class="moreInfo">Restrooms: ${boolConvert(bizz.ameneties.restrooms)}</div>
+      <div class="moreInfo">souvenirs: ${boolConvert(bizz.ameneties.souvenirs)}</div>
+
+      <button class="button--close">Close</button>
+      </dialog>
     </section>
     `
   }
+
+  eventHub.addEventListener("click", theEvent => {
+    if (theEvent.target.id.startsWith("bizzButton--")) {
+      const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+      const theDialog = document.querySelector(dialogSiblingSelector)
+      theDialog.showModal()
+    } else if (theEvent.target.classList.contains("button--close")) {
+      const dialogElement = theEvent.target.parentNode
+      dialogElement.close()
+    } 
+     
+  }
+)
 
 }

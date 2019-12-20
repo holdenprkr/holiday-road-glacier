@@ -2,3 +2,12 @@
 @import 'weather.css';
 @import 'eatery.css';
 @import 'bizarre.css';
+
+#picture__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  max-width: 200px;
+}
