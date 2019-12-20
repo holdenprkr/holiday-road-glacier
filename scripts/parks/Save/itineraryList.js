@@ -7,9 +7,10 @@ const ItineraryListComponent = () => {
   const savedTrips = useTrips()
 
   const render = (trips) => {
+    contentTarget.innerHTML = ""
     contentTarget.innerHTML += `
     ${
-      trips.map(trip => ItineraryCard(trip)).join("")
+      trips.map(trip => ItineraryCard(trip)).reverse().join("")
     }`
   }
   render(savedTrips)
