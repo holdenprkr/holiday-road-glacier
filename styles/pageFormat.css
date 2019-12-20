@@ -11,26 +11,29 @@
 .bottomSection{
   display: flex;
   flex-basis: 100%;
-  border: 1px solid black;
+  border-top: 1px solid black;
   height: 500px;
   min-width: 1050px;
+  margin-right: 10px;
+  
 }
 .parks{
   width: 100%;
-  min-height: 500px;
+  min-height: 1000px;
 }
 
 .bizzareSection{
   flex-basis: 50%;
-  border: 1px solid black;
+  border: none;
 }
 
 .eaterySection{
   flex-basis: 50%;
-  border: 1px solid black;
+  border: none;
 }
 
 aside{
+  margin-top: 40px;
   flex-basis: 40%;
   border: 1px solid black;
 }

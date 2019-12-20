@@ -13,7 +13,14 @@ padding-top: 40px;
 
 .res__card{
   padding: 10px;
-  color: #FFFFFF;
-  text-shadow: 3px 5px 2px #474747;
+  color: black;
+  text-shadow: none;
+  background: rgba(255,255,255,.3);
+  margin-left: 5px;
 }
 
+.eat__style {
+  background-color: #C4C3D0;
+  border: 15px double #1C6EA4;
+  border-radius: 40px 10px 40px 10px;
+}

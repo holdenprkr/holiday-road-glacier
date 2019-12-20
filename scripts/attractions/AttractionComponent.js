@@ -63,12 +63,13 @@ export const attractionComponent = () => {
     <section class="bizz__card">
       <div> <strong>Name</strong>:${bizz.name}</div><br>
       <div>${bizz.description}</div>
-      <div>City:${bizz.city}</div>
-      <div>State:${bizz.state}</div>
+      <br>
+      <div style="font-weight: bold;">${bizz.city},</div>
+      <div style="font-weight: bold;">${bizz.state}</div>
       <button class="button" id="bizzButton--${bizz.id}">Amenities</button>
-      <dialog id="details--">
+      <dialog id="details--" class="bizz__style">
       <div class="moreInfo">Restrooms: ${boolConvert(bizz.ameneties.restrooms)}</div>
-      <div class="moreInfo">souvenirs: ${boolConvert(bizz.ameneties.souvenirs)}</div>
+      <div class="moreInfo">Souvenirs: ${boolConvert(bizz.ameneties.souvenirs)}</div>
 
       <button class="button--close">Close</button>
       </dialog>
