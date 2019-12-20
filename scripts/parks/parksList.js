@@ -37,17 +37,17 @@ export const parksList = () => {
 
 
 
-  eventHub.addEventListener("parkSelected", customEvent => {
-
-    for (let singlePark of parksCollection) {
-      if (customEvent.detail.park === singlePark.parkCode) {
-        render(singlePark)
-    } 
-  }})
     
     let render = park => {
       contentElement.innerHTML = `
       ${ParksComponent(park)}`
+          eventHub.addEventListener("parkSelected", customEvent => {
+        
+            for (let singlePark of parksCollection) {
+              if (customEvent.detail.park === singlePark.parkCode) {
+                render(singlePark)
+            } 
+          }})
       
     }
   })}
