@@ -20,6 +20,12 @@
       "bizzare": "Big White Shirt",
       "eatery": "Club Paris",
       "id": 4
+    },
+    {
+      "park": "Friendship Hill National Historic Site",
+      "bizzare": "Funny Town Welcome Sign",
+      "eatery": "El Pinto",
+      "id": 5
     }
   ]
 }
