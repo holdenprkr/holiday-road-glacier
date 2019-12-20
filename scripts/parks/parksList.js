@@ -19,6 +19,7 @@ export const parksList = () => {
           // changes inner.html to display pictures
           const dialogContent = document.querySelector("#picture__content")
           const dialog = document.querySelector(".pictures")
+          dialogContent.innerHTML = ""
           dialogContent.innerHTML += singlePark.images.map(
               img => {
                 return imagesComponent(img)

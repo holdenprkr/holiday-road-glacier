@@ -17,3 +17,8 @@ padding-top: 40px;
   text-shadow: 3px 5px 2px #474747;
 }
 
+.eat__style {
+  background-color: #C4C3D0;
+  border: 15px double #1C6EA4;
+  border-radius: 40px 10px 40px 10px;
+}

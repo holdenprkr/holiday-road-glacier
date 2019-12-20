@@ -66,7 +66,7 @@ export const attractionComponent = () => {
       <div>City:${bizz.city}</div>
       <div>State:${bizz.state}</div>
       <button class="button" id="bizzButton--${bizz.id}">Amenities</button>
-      <dialog id="details--">
+      <dialog id="details--" class="bizz__style">
       <div class="moreInfo">Restrooms: ${boolConvert(bizz.ameneties.restrooms)}</div>
       <div class="moreInfo">souvenirs: ${boolConvert(bizz.ameneties.souvenirs)}</div>
 
