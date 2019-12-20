@@ -1,26 +1,29 @@
 .parks {
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    }
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
 
 .park__header {
-    padding-bottom: 10px;
-    padding-top: 15px;
-    text-align: center;
-    size: 30px;
-
+  padding-bottom: 10px;
+  padding-top: 15px;
+  text-align: center;
+  size: 30px;
 }
 #h {
-    padding-top: 30px;
-    background-image: none;
+  padding-top: 30px;
+  background-image: none;
 }
 
 .dropdown {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .parkSection {
-    background: rgba(255,255,255,.3);
-    margin-top: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 10px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }

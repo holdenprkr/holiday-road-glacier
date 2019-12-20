@@ -1,26 +1,31 @@
-.eatDropdown{
- border-radius: 5px;
-box-shadow: .5px .5px .5px 0px goldenrod, inset 4px 4px 15px 0px gainsboro, 5px 5px 15px 5px rgba(0,0,0,0); 
+.eatDropdown {
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 0.5px 0px goldenrod, inset 4px 4px 15px 0px gainsboro,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-.eatDropdown__card{
-padding-top: 40px;
+.eatDropdown__card {
+  padding-top: 40px;
 }
 
-.eatDropdown:hover{
+.eatDropdown:hover {
   border-color: goldenrod;
 }
 
-.res__card{
+.res__card {
   padding: 10px;
   color: black;
   text-shadow: none;
-  background: rgba(255,255,255,.3);
+  background: rgba(255, 255, 255, 0.3);
   margin-left: 5px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .eat__style {
-  background-color: #C4C3D0;
-  border: 15px double #1C6EA4;
+  background-color: #c4c3d0;
+  border: 15px double #1c6ea4;
   border-radius: 40px 10px 40px 10px;
 }
