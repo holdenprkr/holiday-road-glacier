@@ -80,6 +80,13 @@ eventHub.addEventListener("click", checkEvent => {
 
 //renders the restauarnt info HTML
 const renderEatery = restaurant => {
+  const boolConvert = (bool) => {
+    if (bool === true) {
+      return "Yes"
+    } else {
+      return "No"
+    }
+  }
   contentElement.innerHTML =
   `
   <section class="res__card">
@@ -87,7 +94,27 @@ const renderEatery = restaurant => {
     <div>${restaurant.description}</div>
     <div>${restaurant.city}</div>
     <div>${restaurant.state}</div>
+    <button class="button" id="eatButton--${restaurant.id}">Amenities</button>
+      <dialog id="details--">
+      <div class="moreInfo">Restrooms: ${boolConvert(restaurant.ameneties.restrooms)}</div>
+      <div class="moreInfo">Pet Friendly: ${boolConvert(restaurant.ameneties.petFriendly)}</div>
+      <div class="moreInfo">wifi Available: ${boolConvert(restaurant.ameneties.wifi)}</div>
+
+      <button class="button--close">Close</button>
+      </dialog>
 </section>
   `
+  eventHub.addEventListener("click", theEvent => {
+    if (theEvent.target.id.startsWith("eatButton--")) {
+      const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+      const theDialog = document.querySelector(dialogSiblingSelector)
+      theDialog.showModal()
+    } else if (theEvent.target.classList.contains("button--close")) {
+      const dialogElement = theEvent.target.parentNode
+      dialogElement.close()
+    } 
+     
+  }
+)
 }
 }
