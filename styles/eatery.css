@@ -4,7 +4,7 @@ box-shadow: .5px .5px .5px 0px goldenrod, inset 4px 4px 15px 0px gainsboro, 5px 
 }
 
 .eatDropdown__card{
-padding: 2px;
+padding-top: 40px;
 }
 
 .eatDropdown:hover{
@@ -13,5 +13,7 @@ padding: 2px;
 
 .res__card{
   padding: 10px;
+  color: #FFFFFF;
+  text-shadow: 3px 5px 2px #474747;
 }
 
