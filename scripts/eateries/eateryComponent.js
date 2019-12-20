@@ -96,7 +96,7 @@ const renderEatery = restaurant => {
     <div>${restaurant.city},</div>
     <div>${restaurant.state}</div>
     <button class="button" id="eatButton--${restaurant.id}">Amenities</button>
-      <dialog id="details--">
+      <dialog id="details--" class="eat__style">
       <div class="moreInfo">Restrooms: ${boolConvert(restaurant.ameneties.restrooms)}</div>
       <div class="moreInfo">Pet Friendly: ${boolConvert(restaurant.ameneties.petFriendly)}</div>
       <div class="moreInfo">WiFi Available: ${boolConvert(restaurant.ameneties.wifi)}</div>

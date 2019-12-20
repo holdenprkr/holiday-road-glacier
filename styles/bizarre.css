@@ -4,7 +4,7 @@
   text-shadow: none;
   background: rgba(255,255,255,.3);
   margin-right: 5px;
-
+  color: black;
 }
 .attractionDropdown{
   border-radius: 5px;
@@ -18,3 +18,9 @@
  .attractionDropdown:hover{
    border-color: goldenrod;
  }
+
+ .bizz__style {
+  background-color: #C4C3D0;
+  border: 15px double #1C6EA4;
+  border-radius: 40px 10px 40px 10px;
+}
