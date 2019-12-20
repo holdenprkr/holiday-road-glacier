@@ -11,9 +11,10 @@
 .bottomSection{
   display: flex;
   flex-basis: 100%;
-  border: 1px solid black;
+  border-top: 1px solid black;
   height: 500px;
   min-width: 1050px;
+  margin-right: 10px;
   
 }
 .parks{
@@ -32,6 +33,7 @@
 }
 
 aside{
+  margin-top: 40px;
   flex-basis: 40%;
   border: 1px solid black;
 }

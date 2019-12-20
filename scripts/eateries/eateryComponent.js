@@ -100,7 +100,7 @@ const renderEatery = restaurant => {
       <div class="moreInfo">Restrooms: ${boolConvert(restaurant.ameneties.restrooms)}</div>
       <div class="moreInfo">Pet Friendly: ${boolConvert(restaurant.ameneties.petFriendly)}</div>
       <div class="moreInfo">WiFi Available: ${boolConvert(restaurant.ameneties.wifi)}</div>
-
+      
       <button class="button--close">Close</button>
       </dialog>
 </section>
