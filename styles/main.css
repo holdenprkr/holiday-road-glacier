@@ -5,7 +5,7 @@
 @import 'parks.css';
 
 body {
-    background-image: url("https://images.unsplash.com/photo-1529729850694-b8041572091c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+    background-image: url("https://images.unsplash.com/photo-1466442862661-7d6f521fe6e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
     background-size: cover;
 }
 
@@ -28,23 +28,23 @@ h1 {
 
 
 .itinerary {
-    color: #FFFFFF;
-    text-shadow: 3px 5px 2px #474747;
+    color: black;
+    text-shadow: none;
 }
 
 .bizz {
-    color: #FFFFFF;
-    text-shadow: 3px 5px 2px #474747;
+    color: black;
+    text-shadow: none;
 }
 
 .loc {
-    color: #FFFFFF;
-    text-shadow: 3px 5px 2px #474747;
+    color: black;
+    text-shadow: none;
 }
 
 .switch {
-    color: #FFFFFF !important;
-    text-shadow: 3px 5px 2px #474747;
+    color: black !important;
+    text-shadow: none;
 }
 
 

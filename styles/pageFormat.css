@@ -14,20 +14,21 @@
   border: 1px solid black;
   height: 500px;
   min-width: 1050px;
+  
 }
 .parks{
   width: 100%;
-  min-height: 500px;
+  min-height: 1000px;
 }
 
 .bizzareSection{
   flex-basis: 50%;
-  border: 1px solid black;
+  border: none;
 }
 
 .eaterySection{
   flex-basis: 50%;
-  border: 1px solid black;
+  border: none;
 }
 
 aside{

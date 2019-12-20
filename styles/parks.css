@@ -1,6 +1,7 @@
 .parks {
     color: black;
     text-align: center;
+    font-weight: bold;
     }
 
 .park__header {

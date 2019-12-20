@@ -1,7 +1,10 @@
 .bizz__card{
   padding: 10px;
-  color: #FFFFFF;
-  text-shadow: 3px 5px 2px #474747;
+  color: black;
+  text-shadow: none;
+  background: rgba(255,255,255,.3);
+  margin-right: 5px;
+
 }
 .attractionDropdown{
   border-radius: 5px;
