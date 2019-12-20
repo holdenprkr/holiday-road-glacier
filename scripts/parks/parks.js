@@ -9,7 +9,7 @@ const ParksComponent = park => {
               <button id="pictures--${park.id}">Pictures</button>
               <dialog class="pictures">
               <div id="picture__content"></div>
-              <button class="close--Pics">close</button>
+              <button id="close--Pics">close</button>
 
               </dialog>
       

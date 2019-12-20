@@ -27,27 +27,30 @@ export const parksList = () => {
               // show dialog
               dialog.showModal()
       }
+    }
+  }
       else if (clickEvent.target.id.startsWith("close--")) {
         const dialogElement = clickEvent.target.parentNode 
         dialogElement.close()
     }
     
-    }}
+    
     
 
 
 
     
-    let render = park => {
-      contentElement.innerHTML = `
-      ${ParksComponent(park)}`
-          eventHub.addEventListener("parkSelected", customEvent => {
-        
-            for (let singlePark of parksCollection) {
-              if (customEvent.detail.park === singlePark.parkCode) {
-                render(singlePark)
-            } 
-          }})
+    eventHub.addEventListener("parkSelected", customEvent => {
+
+      for (let singlePark of parksCollection) {
+        if (customEvent.detail.park === singlePark.parkCode) {
+          render(singlePark)
+      } 
+    }})
       
-    }
+      let render = park => {
+        contentElement.innerHTML = `
+        ${ParksComponent(park)}`
+        
+      }
   })}
