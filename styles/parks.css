@@ -1,5 +1,20 @@
-.park {
-    background-color: slategrey;
-    opacity: .75;
+.parks {
+    color: black;
+    text-align: center;
+    }
+
+.park__header {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    text-align: center;
+    size: 30px;
+
+}
+#h {
+    padding-top: 30px;
+    background-image: none;
 }
 
+.dropdown {
+    margin-top: 50px;
+}
