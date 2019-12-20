@@ -19,3 +19,8 @@
 .dropdown {
     margin-top: 50px;
 }
+
+.parkSection {
+    background: rgba(255,255,255,.3);
+    margin-top: 10px;
+}
