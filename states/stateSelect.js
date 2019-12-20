@@ -27,23 +27,6 @@ const stateSelect = () => {
 
 
 
-    const render = statesCollection => {
-        contentTarget.innerHTML += `
-            <select class="dropdown" id="selectState">
-                <option value="0">Please select a state...</option>
-                ${
-                    statesCollection.map(currentState => {
-                        return `<option>${currentState.states}</option>`
-                    })
-                }
-            </select>
-        `
-    }
-
-
-    
-
-    render(states)
 }
 
 export default stateSelect
