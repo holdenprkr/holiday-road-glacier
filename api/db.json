@@ -13,10 +13,28 @@
       "id": 4
     },
     {
-      "park": "Friendship Hill National Historic Site",
-      "bizzare": "Funny Town Welcome Sign",
-      "eatery": "El Pinto",
+      "park": "Fort Davis National Historic Site",
+      "bizzare": "World’s Most Scenic Urinal",
+      "eatery": "Huber's",
       "id": 5
+    },
+    {
+      "park": "Camp Nelson National Monument",
+      "bizzare": "World’s Largest Egg",
+      "eatery": "Matt's Bar",
+      "id": 6
+    },
+    {
+      "park": "Fort Davis National Historic Site",
+      "bizzare": "World’s Largest Egg",
+      "eatery": "Matt's Bar",
+      "id": 7
+    },
+    {
+      "park": "Cuyahoga Valley National Park",
+      "bizzare": "White House Replica",
+      "eatery": "Joe's Stone Crab",
+      "id": 8
     }
   ]
 }
