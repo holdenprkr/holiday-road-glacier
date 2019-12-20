@@ -5,7 +5,6 @@ import { useParks } from "../parks/ParkProvider.js";
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".weatherSection")
 
-const parkWeather = useWeather()
 const allParks = useParks()
 
 const WeatherListComponent = () => {

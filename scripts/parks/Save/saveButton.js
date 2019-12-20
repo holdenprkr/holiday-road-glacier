@@ -1,6 +1,6 @@
 import { useParks } from "../ParkProvider.js"
 import { saveTrip } from "./itineraryDataProvider.js"
-
+import ItineraryListComponent from "./itineraryList.js"
 
 
 const eventHub = document.querySelector(".container")
@@ -27,7 +27,11 @@ eventHub.addEventListener("parkSelected", event => {
 
     }
 
-    saveTrip(savedTrip)
+    saveTrip(savedTrip).then(
+      () => {
+        ItineraryListComponent()
+      }
+    )
   }
 
 })
