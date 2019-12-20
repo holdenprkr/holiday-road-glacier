@@ -13,7 +13,10 @@ padding-top: 40px;
 
 .res__card{
   padding: 10px;
-  color: #FFFFFF;
+  color: black;
+  text-shadow: none;
+  background: rgba(255,255,255,.3);
+  margin-left: 5px;
 }
 
 .eat__style {

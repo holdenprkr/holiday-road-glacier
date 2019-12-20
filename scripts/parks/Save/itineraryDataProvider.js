@@ -30,3 +30,10 @@ export const saveTrip = trip => {
    })
    .then(getTrips)
  }
+
+ export const deleteTrip = tripId => {
+  return fetch(`http://localhost:3000/itineraries/${tripId}`, {
+      method: "DELETE"
+  })
+      .then(getTrips)
+}
