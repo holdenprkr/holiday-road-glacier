@@ -1,30 +1,33 @@
 {
   "itineraries": [
     {
-      "park": "Cape Cod National Seashore",
+      "park": "Motor Cities National Heritage Area",
+      "bizzare": "Funny Town Welcome Sign",
+      "eatery": "Matt's Bar",
       "id": 1
     },
     {
-      "park": "National Aviation Heritage Area",
-      "bizzare": "Elvis Memorial Chapel",
+      "park": "Motor Cities National Heritage Area",
+      "bizzare": "Funny Town Welcome Sign",
+      "eatery": "Matt's Bar",
       "id": 2
     },
     {
-      "park": "Belmont-Paul Women's Equality National Monument",
-      "bizzare": "Big White Shirt",
-      "eatery": "Club Paris",
+      "park": "Motor Cities National Heritage Area",
+      "bizzare": "Funny Town Welcome Sign",
+      "eatery": "Matt's Bar",
       "id": 3
     },
     {
-      "park": "Belmont-Paul Women's Equality National Monument",
-      "bizzare": "Big White Shirt",
-      "eatery": "Club Paris",
+      "park": "Augusta Canal National Heritage Area",
+      "bizzare": "Owney the Stuffed Dog Postal Mascot",
+      "eatery": "Mayflower Cafe",
       "id": 4
     },
     {
-      "park": "Friendship Hill National Historic Site",
-      "bizzare": "Funny Town Welcome Sign",
-      "eatery": "El Pinto",
+      "park": "National Aviation Heritage Area",
+      "bizzare": "World’s Largest Egg",
+      "eatery": "Hancock Inn",
       "id": 5
     }
   ]
