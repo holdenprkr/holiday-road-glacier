@@ -28,7 +28,6 @@ h1 {
 
 .itinerary {
   color: #ffffff;
-  text-shadow: 3px 5px 2px #474747;
 }
 
 .bizz {
@@ -68,4 +67,12 @@ h1 {
 
 #logo {
     border-radius: 50%;
+}
+
+.savedTripCard {
+  background-color: #C4C3D0;
+  border: 15px double #1C6EA4;
+  border-radius: 40px 10px 40px 10px;
+  margin: 15px;
+  padding: 6px;
 }
