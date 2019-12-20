@@ -5,5 +5,7 @@ export const ItineraryCard = (trip) => {
   <div>Park: ${trip.park}</div>
   <div>Attraction: ${trip.bizzare}</div>
   <div>Eatery: ${trip.eatery}<div>
+  <br>
+  <button class="deleteButton" id="deleteNote--${trip.id}">Delete</button>
   </article>`
 }

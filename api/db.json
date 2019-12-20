@@ -1,34 +1,10 @@
 {
   "itineraries": [
     {
-      "park": "Motor Cities National Heritage Area",
-      "bizzare": "Funny Town Welcome Sign",
-      "eatery": "Matt's Bar",
-      "id": 1
-    },
-    {
-      "park": "Motor Cities National Heritage Area",
-      "bizzare": "Funny Town Welcome Sign",
-      "eatery": "Matt's Bar",
-      "id": 2
-    },
-    {
-      "park": "Motor Cities National Heritage Area",
-      "bizzare": "Funny Town Welcome Sign",
-      "eatery": "Matt's Bar",
-      "id": 3
-    },
-    {
-      "park": "Augusta Canal National Heritage Area",
-      "bizzare": "Owney the Stuffed Dog Postal Mascot",
-      "eatery": "Mayflower Cafe",
-      "id": 4
-    },
-    {
-      "park": "National Aviation Heritage Area",
-      "bizzare": "World’s Largest Egg",
+      "park": "Bryce Canyon National Park",
+      "bizzare": "Grave of Marie Laveau, the Voodoo Queen",
       "eatery": "Hancock Inn",
-      "id": 5
+      "id": 1
     }
   ]
 }
