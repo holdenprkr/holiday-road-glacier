@@ -1,11 +1,11 @@
 const ParksComponent = park => {
   return `
       <div class="park">
-            <header class="park__header">Name: ${park.fullName}</header>
-              <div>States: ${park.states}</div>
-              <div>Website: ${park.url}</div>
-              <div>Directions: ${park.directionsUrl}</div>
-              <div>Description: ${park.description}</div>
+            <header class="park__header" id="h"><span style="font-weight: bold;">Name:</span> ${park.fullName}</header>
+              <div><span style="font-weight: bold;">States:</span> ${park.states}</div>
+              <div><span style="font-weight: bold;">Website:</span> ${park.url}</div>
+              <div><span style="font-weight: bold;">Directions:</span> ${park.directionsUrl}</div>
+              <div><span style="font-weight: bold;">Description:</span> ${park.description}</div>
               <button id="pictures--${park.id}">Pictures</button>
               <dialog class="pictures">
               <div id="picture__content"></div>

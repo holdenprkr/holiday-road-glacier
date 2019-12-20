@@ -1,13 +1,15 @@
 .bizz__card{
   padding: 10px;
+  color: #FFFFFF;
+  text-shadow: 3px 5px 2px #474747;
 }
 .attractionDropdown{
   border-radius: 5px;
-  box-shadow: .5px .5px .5px 0px goldenrod, inset 4px 4px 15px 0px gainsboro, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: .5px .5px .5px 0px goldenrod, inset 4px 4px 15px 0px gainsboro, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .attractionDropdown__card{
-  padding: 2px;
+  padding-top: 40px;
 }
  
  .attractionDropdown:hover{
